@@ -18,12 +18,12 @@ $ npm install snowplow-react-native-tracker --save
 
 ## Initialization
 
+```javascript
 var snowplow = require('snowplow-react-native-tracker');
 var emitter = snowplow.emitter;
 var tracker = snowplow.tracker;
 First, initialize an emitter instance. This object will be responsible for how and when events are sent to Snowplow.
 
-```javascript
 var e = emitter(
   'myscalastreamcollector.net', // Collector endpoint
   'http', // Optionally specify a method - http is the default
