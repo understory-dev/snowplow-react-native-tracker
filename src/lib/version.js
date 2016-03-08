@@ -2,4 +2,4 @@
 /*
  * Exporting version
  */
-export default '0.2.0';
+export default '0.0.8';
