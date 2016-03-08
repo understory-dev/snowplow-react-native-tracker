@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gaearon/snowplow-react-native-tracker.git"
+    "url": "https://github.com/yanivkalfa/snowplow-react-native-tracker.git"
   },
   "files": [
     "dist",
@@ -34,7 +34,7 @@
   "author": "Yaniv Kalfa <netameta1@yahoo.com>",
   "license": "MIT",
   "bugs": {
-    "url": "gitup/issues"
+    "url": "https://github.com/yanivkalfa/snowplow-react-native-tracker/issues"
   },
   "homepage": "none",
   "devDependencies": {
