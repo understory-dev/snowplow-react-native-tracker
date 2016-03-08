@@ -13,7 +13,7 @@ The documentation i will provide here will be limited however here you can find 
 Using npm:
 
 ```bash
-$ npm install snowplow-tracker --save
+$ npm install snowplow-react-native-tracker --save
 ```
 
 ## Initialization
