@@ -75,6 +75,7 @@
     "glob": "^6.0.4",
     "isparta": "4.0.0",
     "istanbul": "^0.3.17",
+    "json-loader": "^0.5.4",
     "mocha": "^2.2.5",
     "rimraf": "^2.3.4",
     "webpack": "^1.11.0"

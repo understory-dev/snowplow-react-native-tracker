@@ -1,6 +1,2 @@
-"use strict";
-import { version } from '../../package.json';
-/*
- * Exporting version
- */
-export default version;
+var packageJson = require('json-loader!../../package.json');
+export default version = packageJson.version;
