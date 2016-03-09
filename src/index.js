@@ -2,8 +2,8 @@
 /*
  * Exporting 3 main components
  */
-import tracker from './lib/tracker.js';
-import emitter from './lib/emitter.js';
-import version from './lib/version.js';
+import Tracker from './lib/tracker.js';
+import Emitter from './lib/emitter.js';
+import Version from './lib/version.js';
 
-export { tracker, emitter, version}
+export { Tracker, Emitter, Version}

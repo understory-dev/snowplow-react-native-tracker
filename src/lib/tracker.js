@@ -1,6 +1,6 @@
 "use strict";
 import core from 'snowplow-tracker-core';
-import version from './version';
+import Version from './version';
 
 /**
  * Snowplow Tracker
@@ -18,7 +18,7 @@ export default ({ emitters, namespace, appId, encodeBase64 = true }) => {
 	let trackerCore = core(encodeBase64, sendPayload);
 
 	trackerCore.setPlatform('srv'); // default platform
-	trackerCore.setTrackerVersion('node-' + version);
+	trackerCore.setTrackerVersion('node-' + Version);
 	trackerCore.setTrackerNamespace(namespace);
 	trackerCore.setAppId(appId);
 
