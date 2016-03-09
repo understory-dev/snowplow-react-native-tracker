@@ -11,9 +11,9 @@ import axios from 'axios';
  * @param { number } bufferSize Number of events which can be queued before flush is called
  * @param { function } callback Callback passed to the request function
  */
-export default (endpoint, protocol, port, method, bufferSize, callback) => {
-	protocol = (protocol || 'http').toLowerCase();
-	method = (method || 'get').toLowerCase();
+export default (endpoint, protocol = 'http', port, method ='get', bufferSize, callback) => {
+	protocol = protocol.toLowerCase();
+	method = method.toLowerCase();
 	if (bufferSize === null || typeof bufferSize === 'undefined') {
 		bufferSize = method === 'get' ? 0 : 10;
 	}
