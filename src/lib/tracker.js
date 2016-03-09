@@ -9,11 +9,11 @@ import core from 'snowplow-tracker-core';
  * @param { string } appId The application ID
  * @param { boolean } encodeBase64 Whether unstructured events and custom contexts should be base 64 encoded
  */
-export default (emitters, namespace, appId, encodeBase64) => {
+export default ({ emitters, namespace, appId, encodeBase64 = true }) => {
 	if (!(emitters instanceof Array)) {
 		emitters = [emitters];
 	}
-	encodeBase64 = encodeBase64 !== false;
+
 	let trackerCore = core(encodeBase64, sendPayload);
 
 	trackerCore.setPlatform('srv'); // default platform
