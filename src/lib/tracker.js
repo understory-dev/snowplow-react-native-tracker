@@ -1,5 +1,6 @@
 "use strict";
 import core from 'snowplow-tracker-core';
+import version from './version';
 
 /**
  * Snowplow Tracker
