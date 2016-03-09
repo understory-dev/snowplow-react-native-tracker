@@ -22,6 +22,7 @@ export default ({ endpoint, protocol = 'http', port, method ='get', bufferSize }
 	const targetUrl = protocol + '://' + endpoint + portString + path;
 	let buffer = [];
 
+	//52.62.61.12:8000
 	/**
 	 * Send all events queued in the buffer to the collector
 	 */
@@ -33,15 +34,11 @@ export default ({ endpoint, protocol = 'http', port, method ='get', bufferSize }
 				schema: 'iglu:com.snowplowanalytics.snowplow/payload_data/jsonschema/1-0-0',
 				data: temp.map(valuesToStrings)
 			};
-			axios.post({
-				url: targetUrl,
-				data: postJson,
-				headers: { 'content-type': 'application/json; charset=utf-8' }
-			}).then(callback);
+			axios.post(targetUrl, { data: postJson, headers: { 'content-type': 'application/json; charset=utf-8' } }).then(callback);
 
 		} else {
 			for (let i=0; i<temp.length; i++) {
-				axios.get({url: targetUrl, params: temp[i]}).then(callback);
+				axios.get(targetUrl, { params: temp[i]}).then(callback);
 			}
 		}
 	}

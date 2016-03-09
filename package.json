@@ -1,6 +1,6 @@
 {
   "name": "snowplow-react-native-tracker",
-  "version": "0.1.21",
+  "version": "0.1.22",
   "description": "Snowplow tracker for react and react-native. ",
   "main": "./lib/index.js",
   "scripts": {
