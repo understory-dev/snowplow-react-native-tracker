@@ -6,4 +6,4 @@ import Tracker from './lib/tracker.js';
 import Emitter from './lib/emitter.js';
 import Version from './lib/version.js';
 
-export { Tracker, Emitter, Version}
+export default{ Tracker, Emitter, Version}
